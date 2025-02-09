@@ -2,6 +2,12 @@
 name = "daipendency-testing"
 version = "1.0.0"
 edition = "2021"
+description = "Test helpers for Daipendency and extractors"
+repository = "https://github.com/daipendency/daipendency-testing"
+homepage = "https://github.com/daipendency/daipendency-testing"
+documentation = "https://docs.rs/daipendency-testing"
+license = "MIT"
+authors = ["Gus Narea"]
 
 [dependencies]
 tempfile = "3.16.0"
