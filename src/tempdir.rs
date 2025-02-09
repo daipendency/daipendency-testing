@@ -8,6 +8,8 @@ use tempfile::TempDir as UpstreamTempDir;
 /// A temporary directory.
 pub struct TempDir {
     temp_dir: UpstreamTempDir,
+    /// The path to the temporary directory.
+    pub path: PathBuf,
 }
 
 impl Default for TempDir {
@@ -19,7 +21,8 @@ impl Default for TempDir {
 impl TempDir {
     pub fn new() -> Self {
         let temp_dir = UpstreamTempDir::new().unwrap();
-        Self { temp_dir }
+        let path = temp_dir.path().to_path_buf();
+        Self { temp_dir, path }
     }
 
     /// Create a file in the temporary directory.

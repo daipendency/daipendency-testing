@@ -1,6 +1,6 @@
 [package]
 name = "daipendency-testing"
-version = "1.0.0"
+version = "1.1.0"
 edition = "2021"
 description = "Test helpers for Daipendency and extractors"
 repository = "https://github.com/daipendency/daipendency-testing"
