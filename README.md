@@ -1,3 +1,3 @@
 # daipendency-testing
 
-Test helpers for Daipendency and plugins
+Test helpers for Daipendency and extractors.
